@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TrainingService } from '../training.service';
-import { Excercise } from '../exercise.model';
+import { Exercise } from '../exercise.model';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./new-training.component.css']
 })
 export class NewTrainingComponent implements OnInit {
-  excercises: Excercise[] = [];
+  excercises: Exercise[] = [];
 
   constructor(private trainingService: TrainingService) { }
 

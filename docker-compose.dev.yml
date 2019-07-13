@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  angular-client:
+    container_name: angulardocker
+    build: .
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    ports:
+      - "4200:4200"
+      - "49153:49153"
+    expose:
+      - "4200" 
+      - "49153"

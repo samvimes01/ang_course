@@ -5,5 +5,5 @@ RUN npm install -g @angular/cli
 COPY package.json /app/package.json
 RUN npm install
 COPY . /app
-CMD ng serve --host 0.0.0.0 --poll=1500
+CMD ng serve --host 0.0.0.0 --poll=3500
 EXPOSE 4200 49153
